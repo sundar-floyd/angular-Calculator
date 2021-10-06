@@ -1,0 +1,38 @@
+<body ng-app="CalcApp" ng-controller="CalcCtrl">
+  <h1><span class="angularC">Angular Project</span> Calculator</h1>
+  <h3>Sundar Chakraborty</h3>
+<div class="calcbady">
+  <div class="barCalc">
+  <span (click)='clear()' class="clean">C</span> 
+    <input type="text" name="Input" [value]="displayValue"/>
+  </div>
+ 
+  <div class="row_one">
+    <button (click)="addNumber(7)" value="7">7</button>
+    <button (click)="addNumber(8)" value="8">8</button>
+    <button (click)="addNumber(9)" value="9">9</button>
+    <button (click)="addOperator('/')" class="setOperator" value="/">/</button>
+  </div>
+ 
+  <div class="row_two">
+    <button (click)="addNumber(5)" value="1">5</button>
+    <button (click)="addNumber(6)" value="1">6</button>
+    <button (click)="addNumber(4)" value="1">4</button>
+    <button (click)="addOperator('*')" class="setOperator" value="*">*</button>
+  </div>
+ 
+  <div class="row_three">
+    <button (click)="addNumber(1)" value="1">1</button>
+    <button (click)="addNumber(2)" value="2">2</button>
+    <button (click)="addNumber(3)" value="3">3</button>
+    <button (click)="addOperator('-')" class="setOperator" value="-">-</button>
+  </div> 
+ 
+  <div class="row_four">
+    <button (click)="addNumber(0)" value="0">0</button>
+    <!-- <button (click)="addNumber('.')" value=",">,</button> -->
+    <button (click)="calculate()" class="result" value="=">=</button>
+    <button (click)="addOperator('+')" class="setOperator" value="+">+</button>
+  </div>
+</div>
+</body>
